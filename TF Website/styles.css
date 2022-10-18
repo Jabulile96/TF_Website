@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* This will be applicable for all html elements */
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    /*SETTING THE LENGTH OF FLEXIBLE ITEMS*/
+    align-items: center;
+    /* This made the logo move a little bit lower */
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    /* We shifted the list to the right */
+}
+
+nav ul {
+    display: inline-block;
+    /*allows to set a width and height on the element.*/
+    list-style-type: none;
+    /* We used this part to remove the bullet form */
+}
+
+nav ul li {
+    display: inline-block;
+    /*This made the menubar to be aligned horizontally */
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    /*We remove the line underlining the text*/
+    color: #265192;
+}
+
+p {
+    color: black;
+}
+
+.container {
+    max-width: 1300px;
+    /* This moved the logo and the menubar towards the center*/
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    /* This comes before we move the heading and the paragraph and before we resize the image with models*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-2 {
+    flex-basis: auto;
+    /* So that both columns can occupy 50% of the space*/
+    min-width: 200px;
+    padding-top: 20px;
+}
+
+.col-2 img {
+    width: 500px;
+    height: 700px;
+    padding: 2px 0px 30px 60px;
+}
+
+.col-2 h1 {
+    font-size: 30px;
+}
+
+.col-2 .pinkbox {
+    height: 15px;
+    width: 15px;
+    background: #265192;
+    display: inline-block;
+    /*allows us to set a width and a height to an element*/
+    margin: 10px 0;
+}
+
+.readmore-btn {
+    padding: 15px 30px;
+    /* top-bottom and right-left*/
+    background: transparent;
+    outline: none;
+    border: 2px solid #265192;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.readmore-btn:hover {
+    background: #265192;
+    text-decoration-color: black;
+}
+
+.col-2 button {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+/*----features---*/
+
+
+
+#features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.feature-row {
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.teams {
+    padding-top: 20px;
+
+}
+
+.col-3 {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.col-3 img {
+    width: 100px;
+}
+
+.col-3 h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.feature-btn {
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.feature-btn .line {
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+
+/*----footer---*/
+.footer {
+    background-color: #265192;
+    height: 250px;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer .footer-row {
+    display: flex;
+    align-items: center;
+    /* This comes before we move the heading and the paragraph and before we resize the image with models*/
+    justify-content: space-between;
+    margin: auto;
+    width: 25%;
+    padding: 15px 0 5px 0;
+    cursor: pointer;
+}
+
+.footer hr {
+    border: none;
+    background: white;
+    height: 1px;
+    margin: 6rem 0 2rem;
+}
+
+/*----about us---*/
+.line-1 {
+    width: 15px;
+    height: 15px;
+    background: #265192;
+    display: inline-block;
+}
+
+.line-2 {
+    width: 80px;
+    height: 1px;
+    background: #265192;
+    display: inline-block;
+}
+
+.line-3 {
+    width: 60px;
+    height: 1px;
+    background: #265192;
+    display: inline-block;
+}
+
+.line {
+    line-height: 8px;
+}
+
+/*----contact us---*/
+.contact {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form {
+    max-width: 350px;
+    margin: 30px 0;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #265192;
+    border-radius: 10px;
+}
+
+.modify {
+    padding-left: 400px;
+}
+
+.myvideo {
+    margin: 70px;
+}
+
+/*----------services-----------*/
+.background {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*---------------------menu-icon------------*/
+.menu-icon {
+    margin-left: 20px;
+    display: none;
+}
+
+
+
+/*------------media query for menu-----------*/
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        /*menu changes to black and aligns horizontally when we make the screen smaller*/
+        left: 0;
+        background: #4d94ff;
+        width: 100%;
+        overflow: hidden;
+        /*here we made the menu slide down and disappear when we click the menu bar*/
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        /*menu changes becomes vertical when we make the screen smaller*/
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        /*menu changes to white when we make the screen smaller*/
+    }
+
+    .menu-icon {
+        display: block;
+        /*block menu appears when we make the screen smaller*/
+        cursor: pointer;
+    }
+
+    .myvideo {
+        align-items: center;
+    }
+
+
+}
+
+/*----------------media query for less than 600 screen size-------------*/
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4 {
+        flex-basis: 100%;
+    }
+
+    .modify {
+        align-items: center;
+    }
+
+
+}
+
+.footer {
+    text-align: center;
+}
+
+.copyright {
+    margin-bottom: 3rem;
+}

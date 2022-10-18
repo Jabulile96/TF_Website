@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!--Here we have to edit both html and css to change the font of our text. We copied the link to html and the font name to css-->
+
+  <title>Tiyiselani Foundation</title>
+</head>
+
+<body>
+  <main>
+    <section id="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <!-- Here we're adding a logo for our website-->
+            <a href="index.html"><img src="images/logo.jpg" width="250" height="90" alt="Xpologo" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <!-- Here we create our unordered list -->
+              <li><a href="index.html">Home</a></li>
+
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <img src="images/menu.png" width="30px" height="30px" alt="menuicon" class="menu-icon" onclick="menutoggle()">
+          <!-- we added a menubar-->
+          <!-- we added a menubar-->
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <img src="images/poet.jpg" width="600" alt="aboutuspicture" />
+          </div>
+          <div class="col-2">
+            <h1>About Us</h1>
+            <span class="pinkbox"></span>
+            <p>
+              Founded by Miss Jabulile Khoza in August 2022, <br /> with the visionto better deprived societies,
+              the foundation <br />is on its way to improving the livelihoods of various <br />communities’ step by
+              step. The founder having lived in <br />a society that is deprived of the opportunity to better
+              itself<br />
+              has made it her goal to ensure that her community and others<br /> are provided with more
+              opportunities to develop.<br /> Tiyiselani Foundation aims <br />to rewrite the narrative of
+              disadvantaged communities. <br />To rewrite the narrative, our foundation looks at <br />meeting the
+              needs of financially disadvantaged <br />schools by organizing various community-based events to<br />
+              generate a source of income. We intend to give the unemployed <br />youth in these communities a
+              better future by <br />providing them with job opportunities that help develop the <br />society they
+              belong to.
+              We believe that together, <br /> we can be “Stronger with Tiyiselani.”<br />
+              To contact us <br /><a href="contact.html">click
+                here</a> and to hear more about our services <a href="services.html">click here</a>.
+            </p>
+            <br /><br />
+            <div class="line">
+              <span class="line-1"></span><br />
+              <span class="line-2"></span><br />
+              <span class="line-3"></span>
+            </div>
+
+            <h2>
+              Remember you save more by repairing your <br />electronic appliances than when you replace <br />them
+              with new
+              ones!
+            </h2>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <section style="text-align: center;">
+        <video width="800px" height="400px" controls="controls" />
+
+        <source src="videos/tsongadance.mp4" type="video/mp4">
+        </video>
+      </section>
+
+      <section class="footer">
+        <div class="footer-row">
+          <div class="col-4">
+            <img src="images/twitter.png" alt="twitter" />
+          </div>
+          <div class="col-4">
+            <img src="images/linkedin.png" alt="linkedin" />
+          </div>
+          <div class="col-4">
+            <img src="images/facebook.png" alt="facebook" />
+          </div>
+          <div class="col-4">
+            <img src="images/instagram.png" alt="instagram" />
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright-Mnandiella</p>
+      </section>
+      <section class="jquery">
+        <!-------------------js for toggle menu---------------->
+        <script>
+          var MenuItems = document.getElementById('MenuItems'); //This is part of the DOM
+
+          MenuItems.style.maxHeight = '0px';
+          function menutoggle() {
+            if (MenuItems.style.maxHeight == '0px') {
+              MenuItems.style.maxHeight = '200px';
+            } else {
+              MenuItems.style.maxHeight = '0px';
+            }
+          }
+        </script>
+  </main>
+</body>
+
+</html>

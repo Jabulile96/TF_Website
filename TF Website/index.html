@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This is for media query-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!--Here we have to edit both html and css to change the font of our text. We copied the link to html and the font name to css-->
+
+    <title>Tiyiselani Foundation</title>
+</head>
+
+<body>
+    <main>
+        <section id="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <!-- Here we're adding a logo for our website-->
+                        <a href="index.html"><img src="images/logo.jpg" width="250" height="70" alt="Xpologo" /></a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <!-- Here we create our unordered list -->
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+
+                            <li><a href="services.html">Services</a></li>
+                            <!-- The a and the href are responsible for making the menu clickable-->
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <img src="images/menu.png" width="30px" height="30px" alt="menuicon" class="menu-icon"
+                        onclick="menutoggle()" />
+                    <!-- we added a menubar-->
+                    <!-- we added a menubar-->
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/sbale.jpg" alt="backgroundphoto" />
+                    </div>
+                    <div class="col-2">
+                        <h1>
+                            Our goal is to help you save<br />
+                            by repairing your electronic<br />
+                            appliances at affordable <br />prices !
+                        </h1>
+                        <span class="pinkbox"></span>
+                        <p>
+                            It is well known that load shedding can damage electronic <br />appliances.
+                            The damage to appliances and electronics doesn’t<br /> normally occur when the power goes
+                            out rather it’s when it comes<br /> back on that the network voltage may be
+                            higher or lower than the<br />
+                            ideal amount.If the voltage is too high it’s called a surge<br /> and the mini
+                            blast candefinitely damage equipment and appliances.<br />The most vulnerable are things
+                            like TVs, computers or other <br />electronics plugged into the system, and landline
+                            phones.<br />When the voltage returns but is lower than normal, that can also<br /> cause
+                            damage to appliances, especially ones with motors like <br />refrigerators and other heavy
+                            devices.Damage occurs in this case<br />because the motor might not have enough starting
+                            power, or it <br />can cause
+                            overheating in its wiring
+                            until the thermal protector <br />triggers. The pandemic has also caused inflation in
+                            our<br />
+                            economy and affecting the affordability of regular people.<br />This where Perkins comesin;
+                            helping you save money by<br />restoring your eletric appliances at affordable prices!
+                        </p>
+                        <div class="btn-read">
+                            <button class="readmore-btn"><a href="about.html">Read
+                                    more</a></button>
+                        </div>
+                        <div class="line">
+                            <span class="line-1"></span><br />
+                            <span class="line-2"></span><br />
+                            <span class="line-3"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="footer">
+            <div class="footer-row">
+                <div class="col-4">
+                    <img src="images/twitter.png" alt="twitter" />
+                </div>
+                <div class="col-4">
+                    <img src="images/linkedin.png" alt="linkedin" />
+                </div>
+                <div class="col-4">
+                    <img src="images/facebook.png" alt="facebook" />
+                </div>
+                <div class="col-4">
+                    <img src="images/instagram.png" alt="instagram" />
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Copyright-Mnandiella</p>
+        </section>
+        <section class="jquery">
+            <!-------------------js for toggle menu---------------->
+            <script>
+                var MenuItems = document.getElementById('MenuItems'); //This is part of the DOM
+
+                MenuItems.style.maxHeight = '0px';
+                function menutoggle() {
+                    if (MenuItems.style.maxHeight == '0px') {
+                        MenuItems.style.maxHeight = '200px';
+                    } else {
+                        MenuItems.style.maxHeight = '0px';
+                    }
+                }
+            </script>
+        </section>
+    </main>
+</body>
+
+</html>

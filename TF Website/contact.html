@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!--Here we have to edit both html and css to change the font of our text. We copied the link to html and the font name to css-->
+
+  <title>Tiyiselani Foundation</title>
+</head>
+
+<body>
+  <main>
+    <section id="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <!-- Here we're adding a logo for our website-->
+            <a href="index.html"><img src="images/logo.jpg" width="250" height="90" alt="Xpologo" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <!-- Here we create our unordered list -->
+              <li><a href="index.html">Home</a></li>
+
+              <li><a href="about.html">About</a></li>
+
+              <li><a href="services.html">Services</a></li>
+              <!-- The a and the href are responsible for making the menu clickable-->
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- we added a cart icon-->
+          <img src="images/menu.png" width="30px" height="30px" alt="menuicon" class="menu-icon" onclick="menutoggle()">
+          <!-- we added a menubar-->
+          <!-- we added a menubar-->
+        </div>
+        <!-- we added a menubar-->
+      </div>
+    </section>
+    </section>
+    <hr>
+
+    <section>
+      <div class="row">
+        <div class="container contact">
+          <div class="col-2">
+            <h1>Leave a message here!</h1>
+            <form>
+              <input type="text" placeholder="Enter Name">
+              <input type="email" placeholder="Enter Email">
+              <input type="message" placeholder="Enter message">
+              <div class="btn-box">
+                <button class="readmore-btn">send</button>
+              </div>
+            </form>
+            <div class="line">
+              <span class="line-1"></span><br>
+              <span class="line-2"></span><br>
+              <span class="line-3"></span>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="modify">
+              <img src="images/pretty.jpg" alt="contact" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-row">
+        <div class="col-4">
+          <img src="images/twitter.png" alt="twitter" />
+        </div>
+        <div class="col-4">
+          <img src="images/linkedin.png" alt="linkedin" />
+        </div>
+        <div class="col-4">
+          <img src="images/facebook.png" alt="facebook" />
+        </div>
+        <div class="col-4">
+          <img src="images/instagram.png" alt="instagram" />
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>Copyright-Mnandiella</p>
+      </div>
+
+    </section>
+    <section class="jquery">
+      <!-------------------js for toggle menu---------------->
+      <script>
+        var MenuItems = document.getElementById('MenuItems'); //This is part of the DOM
+
+        MenuItems.style.maxHeight = '0px';
+        function menutoggle() {
+          if (MenuItems.style.maxHeight == '0px') {
+            MenuItems.style.maxHeight = '200px';
+          } else {
+            MenuItems.style.maxHeight = '0px';
+          }
+        }
+      </script>
+  </main>
+</body>
+
+</html>
